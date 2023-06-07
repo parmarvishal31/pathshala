@@ -23,6 +23,9 @@ app.use(cors())
 
 
 // end point
+
+app.use('/api/v1/auth', require('./routes/authRoute'))
+
 app.get('/', (req, res) => res.send('hello'))
 // port
 const PORT = process.env.PORT
