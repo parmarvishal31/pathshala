@@ -10,8 +10,8 @@ const hashPassword = async (password) => {
     }
 }
 
-const comperPassword = async (password, hashedPassword) => {
+const comparePassword = async (password, hashedPassword) => {
     return bcrypt.compare(password, hashedPassword)
 }
 
-module.exports = { hashPassword, comperPassword }
+module.exports = { hashPassword, comparePassword }
